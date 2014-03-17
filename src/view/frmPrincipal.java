@@ -92,6 +92,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         FrmClientes form = new FrmClientes();
         form.setLocationRelativeTo(null);
         form.setVisible(true);
+        //TEste
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
