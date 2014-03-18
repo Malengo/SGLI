@@ -22,11 +22,14 @@ public class conexao {
 
     public Connection conexao() {
 
+        /*
+         Inclui o JOptionPane apenas para exibir algun erro no BD caso exista, depois do programa quase pronto, gravamos isto em um relatório.
+         */
 
-        this.usuario = "";
+        this.usuario = "root";
         this.senha = "";
-        this.servidor = "";
-        this.banco = "";
+        this.servidor = "localhost";
+        this.banco = "sgli";
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
