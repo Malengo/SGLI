@@ -4,6 +4,9 @@
  */
 package view;
 
+import classes.validacaoClientes;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Gunner Correa
@@ -195,6 +198,11 @@ public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
 
         btnCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/okButton.png"))); // NOI18N
         btnCadastrar.setText("Cadastrar");
+        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastrarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -387,6 +395,21 @@ public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
+        // TODO add your handling code here:
+        validacaoClientes valida = new validacaoClientes();
+        if (valida.validaCPF(txtCpf.getText()) == false) {
+            JOptionPane.showMessageDialog(null, "CPF INVÁLIDO!!!");
+        }
+
+        if (valida.validarTelefone("A674-3231")) {//Deve retornar número inválido
+            JOptionPane.showMessageDialog(null, "NÚMERO VÁLIDO!!!");
+        } else {
+            JOptionPane.showMessageDialog(null, "NÚMERO INVÁLIDO!!!");
+        }
+
+    }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**
      * @param args the command line arguments
