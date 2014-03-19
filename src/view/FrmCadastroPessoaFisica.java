@@ -10,6 +10,7 @@ import java.awt.Font;
 /**
  *
  * @author Gunner Correa
+ * @author Henrique Ap. Lavezzo
  */
 public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
 
