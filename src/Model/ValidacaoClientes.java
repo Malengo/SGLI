@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package classes;
+package Model;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
  * @author Gunner Correa
  * @author Henrique Ap. Lavezzo
  */
-public class validacaoClientes {
+public class ValidacaoClientes {
 
     //Método base para validação com Ereg
     public boolean validarTelefone(String numero) {

@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author Gunner Correa
  */
-public class conexao {
+public class Conexao {
 
     private String usuario;
     private String senha;

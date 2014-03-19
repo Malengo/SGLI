@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package UI;
 
-import classes.validacaoClientes;
+import Model.ValidacaoClientes;
 import javax.swing.JOptionPane;
 
 /**
@@ -398,7 +398,7 @@ public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
         // TODO add your handling code here:
-        validacaoClientes valida = new validacaoClientes();
+        ValidacaoClientes valida = new ValidacaoClientes();
         if (valida.validaCPF(txtCpf.getText()) == false) {
             JOptionPane.showMessageDialog(null, "CPF INVÁLIDO!!!");
         }

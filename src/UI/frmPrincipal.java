@@ -2,17 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package UI;
 
-import DAO.conexao;
-import view.FrmCadastroPessoaFisica;
+import DAO.Conexao;
+import UI.FrmCadastroPessoaFisica;
 /**
  *
  * @author Gunner Correa
  */
 public class frmPrincipal extends javax.swing.JFrame {
 
-    conexao connect = new conexao();
+    Conexao connect = new Conexao();
 
     /**
      * Creates new form frmPrincipal
