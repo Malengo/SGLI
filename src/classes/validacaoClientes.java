@@ -10,6 +10,7 @@ import java.util.regex.Matcher;
 /**
  *
  * @author Gunner Correa
+ * @author Henrique Ap. Lavezzo
  */
 public class validacaoClientes {
 
@@ -17,6 +18,7 @@ public class validacaoClientes {
     public boolean validarTelefone(String numero) {
         Pattern pattern = Pattern.compile("\\d{4,4}-\\d{4,4}");//Responsável por armazenar uma expressão regular
         Matcher matcher = pattern.matcher(numero); //Responsável pelas buscar
+        
         if (matcher.find()) {//Retorna true se encontrar o padrão de caracteres especificado pelas expressões regulares
             return true;
         } else {
@@ -41,18 +43,11 @@ public class validacaoClientes {
                     iDigito2Aux = iDigito2Aux + (12 - iCont) * iDigitoCPF;
                 }
                 iRestoDivisao = (iDigito1Aux % 11);
-                if (iRestoDivisao < 2) {
-                    iDigito1 = 0;
-                } else {
-                    iDigito1 = 11 - iRestoDivisao;
-                }
+                iDigito1 = iRestoDivisao < 2 ? 0 : 11 - iRestoDivisao; 
                 iDigito2Aux += 2 * iDigito1;
                 iRestoDivisao = (iDigito2Aux % 11);
-                if (iRestoDivisao < 2) {
-                    iDigito2 = 0;
-                } else {
-                    iDigito2 = 11 - iRestoDivisao;
-                }
+                iDigito2 = iRestoDivisao < 2 ? 0 : 11 - iRestoDivisao;
+                
                 strDigitoVerificador = strCpf.substring(strCpf.length() - 2, strCpf.length());
                 strDigitoResultado = String.valueOf(iDigito1) + String.valueOf(iDigito2);
                 return strDigitoVerificador.equals(strDigitoResultado);
