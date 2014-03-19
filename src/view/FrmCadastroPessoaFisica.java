@@ -6,7 +6,7 @@ package view;
 
 import classes.validacaoClientes;
 import javax.swing.JOptionPane;
-
+import java.awt.Font;
 /**
  *
  * @author Gunner Correa
@@ -51,6 +51,7 @@ public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
+        Font labelFont = new Font("Verdana", 0, 12);
         txtCep = new javax.swing.JFormattedTextField();
         txtCpf = new javax.swing.JFormattedTextField();
         txtNome = new javax.swing.JTextField();
@@ -78,72 +79,72 @@ public class FrmCadastroPessoaFisica extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("SGLI - Cadastro Pessoa Física");
 
-        jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel1.setFont(labelFont); // NOI18N
         jLabel1.setText("Nome:");
 
-        jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel2.setFont(labelFont);
         jLabel2.setText("CPF:");
 
-        jLabel3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel3.setFont(labelFont);
         jLabel3.setText("RG:");
 
-        jLabel4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel4.setFont(labelFont);
         jLabel4.setText("Filiação Pai:");
 
-        jLabel5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel5.setFont(labelFont);
         jLabel5.setText("Filiação Mãe:");
 
-        jLabel6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel6.setFont(labelFont);
         jLabel6.setText("Data de Nascimento:");
 
-        jLabel7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel7.setFont(labelFont);
         jLabel7.setText("Sexo:");
 
-        jLabel8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel8.setFont(labelFont);
         jLabel8.setText("Responsável:");
         jLabel8.setToolTipText("");
 
-        jLabel9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel9.setFont(labelFont);
         jLabel9.setText("Endereço:");
 
-        jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel10.setFont(labelFont);
         jLabel10.setText("Complemento:");
 
-        jLabel11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel11.setFont(labelFont);
         jLabel11.setText("Número:");
 
-        jLabel12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel12.setFont(labelFont);
         jLabel12.setText("Bairro:");
 
-        jLabel13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel13.setFont(labelFont);
         jLabel13.setText("Referencia:");
         jLabel13.setToolTipText("");
 
-        jLabel14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel14.setFont(labelFont);
         jLabel14.setText("CEP:");
 
-        jLabel15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel15.setFont(labelFont);
         jLabel15.setText("Estado:");
 
-        jLabel16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel16.setFont(labelFont);
         jLabel16.setText("Cidade:");
 
-        jLabel17.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel17.setFont(labelFont);
         jLabel17.setText("Telefone Prin.:");
 
-        jLabel18.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel18.setFont(labelFont);
         jLabel18.setText("Telefone Come.:");
 
-        jLabel19.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel19.setFont(labelFont);
         jLabel19.setText("Celular:");
 
-        jLabel20.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel20.setFont(labelFont);
         jLabel20.setText("E-mail:");
 
-        jLabel21.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel21.setFont(labelFont);
         jLabel21.setText("Status:");
 
-        jLabel22.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel22.setFont(labelFont);
         jLabel22.setText("Dados adicionais:");
 
         try {
